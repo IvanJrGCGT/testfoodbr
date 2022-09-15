@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
@@ -11,6 +12,15 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Container(
+          child: Column(
+            children: [],
+          ),
+        ),
+      ),
+    );
   }
 }
