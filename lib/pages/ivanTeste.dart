@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:iconify_flutter/iconify_flutter.dart';
+
+import 'package:iconify_flutter/iconify_flutter.dart';
+import 'package:iconify_flutter/icons/ic.dart';
 
 class IvanTeste extends StatefulWidget {
   const IvanTeste({super.key});
@@ -84,10 +88,20 @@ class CardNomeQualquer extends StatelessWidget {
               'R\$22,90',
               style: TextStyle(fontSize: 16),
             ),
-            Text(
-              'estrelinhas',
-              style: TextStyle(fontSize: 12),
+            SizedBox(
+              height: 10,
             ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Iconify(Ic.baseline_star, size: 20),
+                Iconify(Ic.baseline_star, size: 20),
+                Iconify(Ic.baseline_star, size: 20),
+                Iconify(Ic.baseline_star, size: 20),
+                Iconify(Ic.baseline_star, size: 20),
+              ],
+            )
           ],
         ),
       ),
