@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testfoodbr/pages/ivanTeste.dart';
+import 'package:testfoodbr/pages/micheleTeste.dart';
 
 import 'pages/homePage.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const IvanTeste(),
+      home: const MichelleTeste(),
     );
   }
 }
