@@ -34,16 +34,33 @@ class _IvanTesteState extends State<IvanTeste> {
                     children: const [
                       CardPedidos(
                         image:
-                            """https://media.istockphoto.com/photos/sushi-and-rolls-in-a-plate-isolated-
-                            picture-id142561968?k=20&m=142561968&s=612x612&w=0&h=1_hL8dR0taRe3BRVt6YqTLepoby
-                            FnkMXVHhKQAx0Ay4=""",
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmhMRNTUVBsNurS-tUjLGqit5CinZAHeTfow&usqp=CAU',
+                        preco: 'R\$22,90',
+                        titulo: 'Sushizada',
+                      ),
+                      CardPedidos(
+                        image:
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmhMRNTUVBsNurS-tUjLGqit5CinZAHeTfow&usqp=CAU',
                         preco: 'R\$22,90',
                         titulo: 'Sushizada',
                       ),
                     ],
                   ),
                   Row(
-                    children: [],
+                    children: [
+                      CardPedidos(
+                        image:
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmhMRNTUVBsNurS-tUjLGqit5CinZAHeTfow&usqp=CAU',
+                        preco: 'R\$22,90',
+                        titulo: 'Sushizada',
+                      ),
+                      CardPedidos(
+                        image:
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmhMRNTUVBsNurS-tUjLGqit5CinZAHeTfow&usqp=CAU',
+                        preco: 'R\$22,90',
+                        titulo: 'Sushizada',
+                      ),
+                    ],
                   ),
                   Row(
                     children: [],

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/ic.dart';
 
@@ -29,14 +30,16 @@ class CardPedidos extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8.0),
                 child: Image.network(
                   image,
-                  width: 80,
+                  width: 90,
                 )),
             SizedBox(
               height: 10,
             ),
             Text(
               titulo,
-              style: TextStyle(fontSize: 28),
+              style: TextStyle(
+                fontSize: 22,
+              ),
             ),
             SizedBox(
               height: 10,
@@ -52,11 +55,11 @@ class CardPedidos extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Iconify(Ic.sharp_star, size: 20),
                 Iconify(Ic.baseline_star, size: 20),
                 Iconify(Ic.baseline_star, size: 20),
-                Iconify(Ic.baseline_star, size: 20),
-                Iconify(Ic.baseline_star, size: 20),
-                Iconify(Ic.baseline_star, size: 20),
+                Iconify(Ic.sharp_star_half, size: 20),
+                Iconify(Ic.sharp_star_border_purple500, size: 20),
               ],
             )
           ],
