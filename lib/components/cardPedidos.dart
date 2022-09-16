@@ -10,7 +10,8 @@ class CardPedidos extends StatelessWidget {
   final dynamic preco;
   final dynamic descricao;
   const CardPedidos(
-      {required this.image,
+      {super.key,
+      required this.image,
       required this.titulo,
       this.descricao,
       required this.preco});
