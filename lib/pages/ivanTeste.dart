@@ -5,6 +5,7 @@ import 'package:iconify_flutter/iconify_flutter.dart';
 
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/ic.dart';
+import 'package:testfoodbr/components/cardPedidos.dart';
 
 class IvanTeste extends StatefulWidget {
   const IvanTeste({super.key});
@@ -30,22 +31,22 @@ class _IvanTesteState extends State<IvanTeste> {
                 verticalDirection: VerticalDirection.down,
                 children: [
                   Row(
-                    children: [
-                      CardNomeQualquer(),
-                      CardNomeQualquer(),
+                    children: const [
+                      CardPedidos(
+                        image:
+                            """https://media.istockphoto.com/photos/sushi-and-rolls-in-a-plate-isolated-
+                            picture-id142561968?k=20&m=142561968&s=612x612&w=0&h=1_hL8dR0taRe3BRVt6YqTLepoby
+                            FnkMXVHhKQAx0Ay4=""",
+                        preco: 'R\$22,90',
+                        titulo: 'Sushizada',
+                      ),
                     ],
                   ),
                   Row(
-                    children: [
-                      CardNomeQualquer(),
-                      CardNomeQualquer(),
-                    ],
+                    children: [],
                   ),
                   Row(
-                    children: [
-                      CardNomeQualquer(),
-                      CardNomeQualquer(),
-                    ],
+                    children: [],
                   ),
                 ],
               ),
@@ -53,7 +54,7 @@ class _IvanTesteState extends State<IvanTeste> {
       ),
     );
   }
-}
+} /* 
 
 class CardNomeQualquer extends StatelessWidget {
   @override
@@ -108,3 +109,4 @@ class CardNomeQualquer extends StatelessWidget {
     );
   }
 }
+ */
